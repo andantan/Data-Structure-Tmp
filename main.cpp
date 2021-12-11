@@ -69,7 +69,7 @@ bool isEmpty(Stack* p)
 
 void push(Stack* p, Coordinate data)
 {
-	if (isFull(p)) printf("스택이 꽉찼습니다.\n");
+	if (isFull(p)) printf("STACK IS FULL.\n");
 	else
 	{
 		p->top++;
@@ -83,7 +83,7 @@ Coordinate pop(stack* p)
 {
 	if (isEmpty(p))
 	{
-		printf("스택이 비어있습니다.\n");
+		printf("STACK IS EMPTY.\n");
 	}
 
 	return p->data[(p->top)--];
@@ -203,7 +203,7 @@ int main()
 
 		if (isEmpty(s))
 		{
-			printf("이동 경로를 찾을 수 없습니다. 실패\n");
+			printf("FAILED\n");
 			
 			break;
 		}
