@@ -25,7 +25,7 @@ public:
 
 	void enqueue(Coordinate* coordinate)
 	{
-		if (isFull()) printf("큐가 꽉찼습니다.\n");
+		if (isFull()) printf("QUEUE IS FULL.\n");
 		else
 		{
 			rear = (rear + 1) % MAX_SIZE;
@@ -39,7 +39,7 @@ public:
 	{
 		if (isEmpty())
 		{
-			printf("큐가 비어있습니다.\n");
+			printf("QUEUE IS EMPTY.\n");
 		}
 		else
 		{
@@ -58,6 +58,6 @@ public:
 			printf("(%d, %d) -> ", data[i % MAX_SIZE].x, data[i % MAX_SIZE].y);
 		}
 
-		printf("도착\n");
+		printf("ARRIVED\n");
 	}
 };
